@@ -17,7 +17,7 @@ function inputCaloriesByDay (day) {
 }
 // console.log(inputCaloriesByDay("Tuesday"))
 
-getTotalCalories() {
+function getTotalCalories() {
     return inputCaloriesByDay("Monday") +
         inputCaloriesByDay("Tuesday") +
         inputCaloriesByDay("Wednesday") +
@@ -25,4 +25,12 @@ getTotalCalories() {
         inputCaloriesByDay("Friday") +
         inputCaloriesByDay("Saturday") + 
         inputCaloriesByDay("Sunday");
+}
+
+function getIdealCalories(){
+    const idealDailyCalories = 2500;
+    return idealDailyCalories * 7
+}
+function calculateHealthPlan() {
+    
 }

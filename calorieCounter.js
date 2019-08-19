@@ -1,18 +1,18 @@
-function inputCaloriesByDay(yda) {
-    if ('Monday') {
+function inputCaloriesByDay(day) {
+    if (day === 'Monday') {
         return 2500;
-    } else if ('Tuesday') {
+    } else if (day === 'Tuesday') {
         return 2500;
-    } else if ('Wednesday') {
+    } else if (day === 'Wednesday') {
         return 2500;
-    } else if ('Thursday') {
+    } else if (day === 'Thursday') {
         return 2500;
-    } else if ('Friday'){
+    } else if (day === 'Friday'){
         return 2500;
-    } else if ('Saturday'){
+    } else if (day === 'Saturday'){
         return 2500;
-    } else if ('Sunday') {
-        return 2500;
+    } else if (day === 'Sunday') {
+        return 2501;
     } else {
         return "enter a day"
     }
@@ -45,6 +45,6 @@ function calculateHealthPlan() {
         return "Time for seconds!";
     }
 }
-console.log(inputCaloriesByDay())
+
 console.log(getTotalCalories())
 console.log(calculateHealthPlan())

@@ -1,21 +1,23 @@
-function inputCaloriesByDay (day) {
+function inputCaloriesByDay(day) {
     if ("Monday") {
-        return 2000
+        return 3000;
     } else if ("Tuesday") {
-        return 1900
+        return 1900;
     } else if ("Wednesday") {
-        return 2700
+        return 1700
     } else if ("Thursday") {
-        return 2200
+        return 3200
     } else if ("Friday"){
-        return 2600
+        return 3600
     } else if ("Saturday"){
         return 2800
     } else if ("Sunday") {
         return 3300
+    } else {
+        return "enter a day"
     }
 }
-console.log(inputCaloriesByDay("Tuesday"))
+// console.log(inputCaloriesByDay("Wednesday"))
 
 function getTotalCalories() {
     return inputCaloriesByDay("Monday") +
@@ -37,11 +39,11 @@ function calculateHealthPlan() {
 
     if (actualCalories === idealCalories){
         return "You ate just the right amount of food!";
-    } else if (actualCalories > idealCalories) {
+    } if (actualCalories > idealCalories) {
         return "Time to head to the gym!";
-    } else if (actualCalories < idealCalories) {
+    } else  {
         return "Time for seconds!";
     }
 }
 
-console.log(calculateHealthPlan("Tuesday"))
+console.log(calculateHealthPlan())

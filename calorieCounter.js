@@ -1,18 +1,18 @@
-function inputCaloriesByDay(day) {
-    if ("Monday") {
-        return 3000;
-    } else if ("Tuesday") {
-        return 1900;
-    } else if ("Wednesday") {
-        return 1700
-    } else if ("Thursday") {
-        return 3200
-    } else if ("Friday"){
-        return 3600
-    } else if ("Saturday"){
-        return 2800
-    } else if ("Sunday") {
-        return 3300
+function inputCaloriesByDay(yda) {
+    if ('Monday') {
+        return 2500;
+    } else if ('Tuesday') {
+        return 2500;
+    } else if ('Wednesday') {
+        return 2500;
+    } else if ('Thursday') {
+        return 2500;
+    } else if ('Friday'){
+        return 2500;
+    } else if ('Saturday'){
+        return 2500;
+    } else if ('Sunday') {
+        return 2500;
     } else {
         return "enter a day"
     }
@@ -21,12 +21,12 @@ function inputCaloriesByDay(day) {
 
 function getTotalCalories() {
     return inputCaloriesByDay("Monday") +
-        inputCaloriesByDay("Tuesday") +
-        inputCaloriesByDay("Wednesday") +
-        inputCaloriesByDay("Thursday") +
-        inputCaloriesByDay("Friday") +
-        inputCaloriesByDay("Saturday") + 
-        inputCaloriesByDay("Sunday");
+    inputCaloriesByDay("Tuesday") +
+    inputCaloriesByDay("Wednesday") +
+    inputCaloriesByDay("Thursday") +
+    inputCaloriesByDay("Friday") +
+    inputCaloriesByDay("Saturday") + 
+    inputCaloriesByDay("Sunday");
 }
 
 function getIdealCalories(){
@@ -34,8 +34,8 @@ function getIdealCalories(){
     return idealDailyCalories * 7
 }
 function calculateHealthPlan() {
-    const actualCalories = getTotalCalories()
-    const idealCalories = getIdealCalories()
+    const actualCalories = getTotalCalories();
+    const idealCalories = getIdealCalories();
 
     if (actualCalories === idealCalories){
         return "You ate just the right amount of food!";
@@ -45,5 +45,6 @@ function calculateHealthPlan() {
         return "Time for seconds!";
     }
 }
-
+console.log(inputCaloriesByDay())
+console.log(getTotalCalories())
 console.log(calculateHealthPlan())

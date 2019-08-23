@@ -25,14 +25,14 @@
 //         console.log("good work")
 // }
 // }
-const userName = prompt('What is your name?');
+const userName = window.prompt('What is your name?');
 
 if (userName){
         console.log("hello, " + userName + "!");
 } else {
         console.log("hi")
 }
-const userQuestion = prompt("Please ask a question")
+const userQuestion = window.prompt("Please ask a question")
 
 console.log("hello, " + userName + "you asked" + userQuestion)
 

@@ -26,38 +26,65 @@
 // }
 // }
 
-const userName = prompt('What is your name?');
+// const userName = prompt('What is your name?');
 
-if (userName){
-        console.log("hello, " + userName + "!");
-} else {
-        console.log("hi")
-}
-const userQuestion = prompt("Please ask a question")
+// if (userName){
+//         console.log("hello, " + userName + "!");
+// } else {
+//         console.log("hi")
+// }
+// const userQuestion = prompt("Please ask a question")
 
-console.log("hello, " + userName + "you asked" + userQuestion)
+// console.log("hello, " + userName + "you asked" + userQuestion)
 
-const randomNumber = Math.floor(Math.random() * 8);
-const eightBall = "";
+// const randomNumber = Math.floor(Math.random() * 8);
+// const eightBall = "";
 
-if (randomNumber === 1)  {
-	console.log ('Better not tell you now.') 
-} else if (randomNumber === 2) {
-	console.log('Concentrate and ask again.')
-} else if (randomNumber === 3) {
-	console.log('Reply hazy try again')
-} else if (randomNumber === 4) {
-	console.log('Cannot predict now') 
-} else if (randomNumber === 5) {
-	console.log('My reply is no.')
-} else if (randomNumber === 6) {
-	console.log('My sources say no')
-} else if (randomNumber === 7) {
-	console.log('Outlook not so good')
-} else if (randomNumber === 8) {
-	console.log('Signs point to yes')
-} else  {
-	console.log('could you repeat the question?')
-}
+// if (randomNumber === 1)  {
+// 	console.log ('Better not tell you now.') 
+// } else if (randomNumber === 2) {
+// 	console.log('Concentrate and ask again.')
+// } else if (randomNumber === 3) {
+// 	console.log('Reply hazy try again')
+// } else if (randomNumber === 4) {
+// 	console.log('Cannot predict now') 
+// } else if (randomNumber === 5) {
+// 	console.log('My reply is no.')
+// } else if (randomNumber === 6) {
+// 	console.log('My sources say no')
+// } else if (randomNumber === 7) {
+// 	console.log('Outlook not so good')
+// } else if (randomNumber === 8) {
+// 	console.log('Signs point to yes')
+// } else  {
+// 	console.log('could you repeat the question?')
+// }
 
-console.log('The eight ball answer: ' + eightBall);
+// console.log('The eight ball answer: ' + eightBall);
+
+// function longestWord(string) {
+//         var word = string.split(' ')
+//         var longestWords = 0;
+        
+//         for (var i = 0; i < string.length; i++){
+//         } if (word[i].length > longestWords) {
+//                 longestWords = word[i].length;
+//         }
+        
+//         return longestWords;
+//         }
+
+        
+// longestWords('what is it?')
+
+function palindrom(string) {
+
+        string = string.replace(/\W/g, '').toLowerCase();{
+          
+          return (string == string.split('').reverse().join(''));
+          
+        }
+     
+      }
+
+ console.log(palindrom('milk-klim'))     

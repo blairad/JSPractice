@@ -110,12 +110,25 @@
 // console.log(oddNum([1,2,3,4,5,6,7,8,9,10]));
 // console.log(oddNum([26,45,67,88]));
 
-//filter method odd - even
+//filter method even
+
+// function evenNum(array){
+  
+//   return array.filter(function(num){
+//     return num % 2 === 0;
+//   })   
+
+// }
+
+// console.log(evenNum([1,2,3,4,5,6,7,8,9,10]));
+// console.log(evenNum([26,45,67,88]));
+
+// filter method odd 
 
 function evenNum(array){
   
   return array.filter(function(num){
-    return num % 2 === 0;
+    return num % 2 === 1;
   })   
 
 }

@@ -93,19 +93,32 @@
 
 // to check if numbers are odd or even
 
-function oddNum(array){
+// function oddNum(array){
   
-  const evenArray = [];
+//   const evenArray = [];
   
-  for (var i = 0; i < array.length; i++){
+//   for (var i = 0; i < array.length; i++){
   
-  if (array[i] % 2 === 0){
-    evenArray.push(array[i])
-  }
+//   if (array[i] % 2 === 0){
+//     evenArray.push(array[i])
+//   }
     
-  }
-    return evenArray
+//   }
+//     return evenArray
+// }
+
+// console.log(oddNum([1,2,3,4,5,6,7,8,9,10]));
+// console.log(oddNum([26,45,67,88]));
+
+//filter method odd - even
+
+function evenNum(array){
+  
+  return array.filter(function(num){
+    return num % 2 === 0;
+  })   
+
 }
 
-console.log(oddNum([1,2,3,4,5,6,7,8,9,10]));
-console.log(oddNum([26,45,67,88]));
+console.log(evenNum([1,2,3,4,5,6,7,8,9,10]));
+console.log(evenNum([26,45,67,88]));

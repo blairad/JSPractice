@@ -77,14 +77,35 @@
         
 // longestWords('what is it?')
 
-function palindrom(string) {
 
-        string = string.replace(/\W/g, '').toLowerCase();{
+
+// function palindrom(string) {
+
+//         string = string.replace(/\W/g, '').toLowerCase();{
           
-          return (string == string.split('').reverse().join(''));
+//           return (string == string.split('').reverse().join(''));
           
-        }
+//         }
      
-      }
+//       }
 
- console.log(palindrom('milk-klim'))     
+//  console.log(palindrom('milk-klim'))     
+
+// to check if numbers are odd or even
+
+function oddNum(array){
+  
+  const evenArray = [];
+  
+  for (var i = 0; i < array.length; i++){
+  
+  if (array[i] % 2 === 0){
+    evenArray.push(array[i])
+  }
+    
+  }
+    return evenArray
+}
+
+console.log(oddNum([1,2,3,4,5,6,7,8,9,10]));
+console.log(oddNum([26,45,67,88]));

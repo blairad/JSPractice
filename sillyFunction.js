@@ -62,20 +62,21 @@
 
 // console.log('The eight ball answer: ' + eightBall);
 
-// function longestWord(string) {
-//         var word = string.split(' ')
-//         var longestWords = 0;
-        
-//         for (var i = 0; i < string.length; i++){
-//         } if (word[i].length > longestWords) {
-//                 longestWords = word[i].length;
-//         }
-        
-//         return longestWords;
-//         }
+function longestWord(string) {
+  var word = string.split(' ');
+  var bigWord = '' ;
+  
+  for (var i = 0; i < word.length; i++){
+   if (bigWord.length < word[i].length) {
+          bigWord = word[i];
+    }
+    }
+  string = bigWord;
+  return string.length;
+  }
 
-        
-// longestWords('what is it?')
+  
+console.log(longestWord('my favourite day is Friday'));
 
 
 
@@ -125,13 +126,13 @@
 
 // filter method odd 
 
-function evenNum(array){
+// function evenNum(array){
   
-  return array.filter(function(num){
-    return num % 2 === 1;
-  })   
+//   return array.filter(function(num){
+//     return num % 2 === 1;
+//   })   
 
-}
+// }
 
-console.log(evenNum([1,2,3,4,5,6,7,8,9,10]));
-console.log(evenNum([26,45,67,88]));
+// console.log(evenNum([1,2,3,4,5,6,7,8,9,10]));
+// console.log(evenNum([26,45,67,88]));

@@ -136,3 +136,21 @@ console.log(longestWord('my favourite day is Friday'));
 
 // console.log(evenNum([1,2,3,4,5,6,7,8,9,10]));
 // console.log(evenNum([26,45,67,88]));
+
+// function to take two arguments, a string and number and to repeat the sting the amount of times from the number
+
+function repeatString(string, num){
+  
+  //    var finalString = string;
+    
+    if(num < 0)
+      return ' ';
+     else if (num === 1) 
+      return string;
+      else 
+        return string + repeatString(string, num -1)
+    
+  }
+  
+  console.log(repeatString('car',4))
+  console.log(repeatString('dog',10))

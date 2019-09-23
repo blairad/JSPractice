@@ -148,7 +148,7 @@ function repeatString(string, num){
      else if (num === 1) 
       return string;
       else 
-        return string + repeatString(string, num -1)
+        return string + repeatString(string, num -1 )
     
   }
   

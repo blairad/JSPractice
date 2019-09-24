@@ -62,21 +62,21 @@
 
 // console.log('The eight ball answer: ' + eightBall);
 
-function longestWord(string) {
-  var word = string.split(' ');
-  var bigWord = '' ;
+// function longestWord(string) {
+//   var word = string.split(' ');
+//   var bigWord = '' ;
   
-  for (var i = 0; i < word.length; i++){
-   if (bigWord.length < word[i].length) {
-          bigWord = word[i];
-    }
-    }
-  string = bigWord;
-  return string.length;
-  }
+//   for (var i = 0; i < word.length; i++){
+//    if (bigWord.length < word[i].length) {
+//           bigWord = word[i];
+//     }
+//     }
+//   string = bigWord;
+//   return string.length;
+//   }
 
   
-console.log(longestWord('my favourite day is Friday'));
+// console.log(longestWord('my favourite day is Friday'));
 
 
 
@@ -174,19 +174,46 @@ console.log(longestWord('my favourite day is Friday'));
 
 // as above but with while statement
 
-function repeatString(string, num){
+// function repeatString(string, num){
   
-  var finalString = '';
+//   var finalString = '';
 
-if (num <= 0){
-  return finalString;
-}
-  while (num > 0){
-    finalString += string;
-    num--;
+// if (num <= 0){
+//   return finalString;
+// }
+//   while (num > 0){
+//     finalString += string;
+//     num--;
+//   }
+// return finalString;
+// }
+
+// console.log(repeatString('car', 4))
+// console.log(repeatString('dog', 3))
+
+// return longest word
+
+// return longest word
+
+function longestWord(string){
+  
+  // regExp /\W/g; the Capital W takes out any non word character is not A-Z etc. the g is for global so it will not just stop at first character it finds
+  // var regExp = /\W/g; if var declared like this you can add to arguments eg (regExp, ' ')
+  
+  var stringMinusSpecialChars = string.replace(/\W/g, ' ');
+  var biggestWord = '';
+  var sentence = stringMinusSpecialChars.split(' ');
+  
+  for (var i =0; i < sentence.length; i++){
+    if (sentence[i].length > biggestWord.length){
+      biggestWord = sentence[i]
+    }
   }
-return finalString;
+  return biggestWord.length;
+  
 }
 
-console.log(repeatString('car', 4))
-console.log(repeatString('dog', 3))
+
+console.log(longestWord('is the a constitutional crisis?'))
+console.log(longestWord('Will the slug resign?'))
+

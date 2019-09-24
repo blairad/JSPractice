@@ -139,18 +139,54 @@ console.log(longestWord('my favourite day is Friday'));
 
 // function to take two arguments, a string and number and to repeat the sting the amount of times from the number
 
+// function repeatString(string, num){
+  
+//   //    var finalString = string;
+    
+//     if(num < 0)
+//       return ' ';
+//      else if (num === 1) 
+//       return string;
+//       else 
+//         return string + repeatString(string, num -1 )
+    
+//   }
+  
+//   console.log(repeatString('car',4))
+//   console.log(repeatString('dog',10))
+
+// // same but with for loop
+// function repeatString(string, num){
+  
+//   var finalString = '';
+ 
+//  if(num <= 0){
+//    return finalString;
+//  }
+//  for (var i = 1; i <= num; i ++){
+//    finalString += string;
+//  }
+//   return finalString
+// }
+
+// console.log(repeatString('car',4))
+// console.log(repeatString('dog',10))
+
+// as above but with while statement
+
 function repeatString(string, num){
   
-  //    var finalString = string;
-    
-    if(num < 0)
-      return ' ';
-     else if (num === 1) 
-      return string;
-      else 
-        return string + repeatString(string, num -1 )
-    
+  var finalString = '';
+
+if (num <= 0){
+  return finalString;
+}
+  while (num > 0){
+    finalString += string;
+    num--;
   }
-  
-  console.log(repeatString('car',4))
-  console.log(repeatString('dog',10))
+return finalString;
+}
+
+console.log(repeatString('car', 4))
+console.log(repeatString('dog', 3))

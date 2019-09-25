@@ -270,3 +270,12 @@ function alphaOrder(string){
 
 console.log(alphaOrder('the beatles'));
 console.log(alphaOrder('hello, goodbye'));
+
+// a reverse name 
+
+function nameShuffle(str) {
+  return str.split(' ').reverse().join(' ');
+}
+
+console.log(nameShuffle("John Smith"));
+console.log(nameShuffle("Albert Einstein"));

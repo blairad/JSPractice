@@ -219,23 +219,39 @@
 
 // return longest word
 
-function longestWord(string){
+// function longestWord(string){
   
-  // regExp /\W/g; the Capital W takes out any non word character is not A-Z etc. the g is for global so it will not just stop at first character it finds
-  // var regExp = /\W/g; if var declared like this you can add to arguments eg (regExp, ' ')
+//   // regExp /\W/g; the Capital W takes out any non word character is not A-Z etc. the g is for global so it will not just stop at first character it finds
+//   // var regExp = /\W/g; if var declared like this you can add to arguments eg (regExp, ' ')
   
-  var stringMinusSpecialChars = string.replace(/\W/g, ' ');
-  var biggestWord = '';
-  var sentence = stringMinusSpecialChars.split(' ');
+//   var stringMinusSpecialChars = string.replace(/\W/g, ' ');
+//   var biggestWord = '';
+//   var sentence = stringMinusSpecialChars.split(' ');
   
-  for (var word of sentence){
-       if(word.length > biggestWord.length) {
-         biggestWord = word;
-       }
-     }
-  return biggestWord;
+//   for (var word of sentence){
+//        if(word.length > biggestWord.length) {
+//          biggestWord = word;
+//        }
+//      }
+//   return biggestWord;
+//   // return biggestWord.length to show number rather than word
+// }
+
+
+// console.log(longestWord('is the a constitutional crisis?'))
+// console.log(longestWord('Will the slug resign?'))
+
+// alphabetical order string
+
+function alphaOrder(string){
+  
+  var myString = string.split('').sort().join('');{
+    return myString;
+  }
+  
 }
 
+console.log(alphaOrder('the beatles'));
+console.log(alphaOrder('hello, goodbye'));
 
-console.log(longestWord('is the a constitutional crisis?'))
-console.log(longestWord('Will the slug resign?'))
+// add .replace(/\W/g, '') to get rid of ,!? etc. add space between ('') -> (' ') for either word reverse or individual chars

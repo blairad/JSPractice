@@ -243,15 +243,30 @@
 
 // alphabetical order string
 
+// function alphaOrder(string){
+  
+//   var myString = string.split('').sort().join('');{
+//     return myString;
+//     // even less just do: return string.split('').sort().join('');
+//   }
+  
+// }
+
+// console.log(alphaOrder('the beatles'));
+// console.log(alphaOrder('hello, goodbye'));
+
+// add .replace(/\W/g, '') to get rid of ,!? etc. add space between ('') -> (' ') for either word reverse or individual chars
+
+// alphabetical order string but with spread operator
+
 function alphaOrder(string){
   
-  var myString = string.split('').sort().join('');{
-    return myString;
-  }
+  
+  
+  return [...string].sort().join('');
+  
   
 }
 
 console.log(alphaOrder('the beatles'));
 console.log(alphaOrder('hello, goodbye'));
-
-// add .replace(/\W/g, '') to get rid of ,!? etc. add space between ('') -> (' ') for either word reverse or individual chars

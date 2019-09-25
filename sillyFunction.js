@@ -195,6 +195,30 @@
 
 // return longest word
 
+// function longestWord(string){
+  
+//   // regExp /\W/g; the Capital W takes out any non word character is not A-Z etc. the g is for global so it will not just stop at first character it finds
+//   // var regExp = /\W/g; if var declared like this you can add to arguments eg (regExp, ' ')
+  
+//   var stringMinusSpecialChars = string.replace(/\W/g, ' ');
+//   var biggestWord = '';
+//   var sentence = stringMinusSpecialChars.split(' ');
+  
+//   for (var i =0; i < sentence.length; i++){
+//     if (sentence[i].length > biggestWord.length){
+//       biggestWord = sentence[i]
+//     }
+//   }
+//   return biggestWord.length;
+  
+// }
+
+
+// console.log(longestWord('is the a constitutional crisis?'))
+// console.log(longestWord('Will the slug resign?'))
+
+// return longest word
+
 function longestWord(string){
   
   // regExp /\W/g; the Capital W takes out any non word character is not A-Z etc. the g is for global so it will not just stop at first character it finds
@@ -204,16 +228,14 @@ function longestWord(string){
   var biggestWord = '';
   var sentence = stringMinusSpecialChars.split(' ');
   
-  for (var i =0; i < sentence.length; i++){
-    if (sentence[i].length > biggestWord.length){
-      biggestWord = sentence[i]
-    }
-  }
-  return biggestWord.length;
-  
+  for (var word of sentence){
+       if(word.length > biggestWord.length) {
+         biggestWord = word;
+       }
+     }
+  return biggestWord;
 }
 
 
 console.log(longestWord('is the a constitutional crisis?'))
 console.log(longestWord('Will the slug resign?'))
-

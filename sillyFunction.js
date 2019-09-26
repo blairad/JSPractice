@@ -277,30 +277,42 @@
 
 // a wee function to remove strings from an array
 
-function arrayFilter(array){
+// function arrayFilter(array){
   
-  var numbers = [];
-  // array. length itterates from start to finish. 0 to ...
-  for(var i = 0; i < array.length; i++){
-    if(typeof array[i] === 'number'){
-      numbers.push(array[i])
-    }
-  }
- return numbers 
-}
-console.log(arrayFilter([1,2,3,'5','2',6,14,'12']))
-console.log(arrayFilter([11,22,33,'nope','2',436,214,'filter me']))
-console.log(arrayFilter([1,22,35,'5','bye',6,144,'okay']))
+//   var numbers = [];
+//   // array. length itterates from start to finish. 0 to ...
+//   for(var i = 0; i < array.length; i++){
+//     if(typeof array[i] === 'number'){
+//       numbers.push(array[i])
+//     }
+//   }
+//  return numbers 
+// }
+// console.log(arrayFilter([1,2,3,'5','2',6,14,'12']))
+// console.log(arrayFilter([11,22,33,'nope','2',436,214,'filter me']))
+// console.log(arrayFilter([1,22,35,'5','bye',6,144,'okay']))
 
-// same same but different... less code
+// // same same but different... less code
+
+// function arrayFilter(array){ 
+//   var numbers = array.filter(function(item){
+//     return typeof item === 'number';
+//   });
+  
+//  return numbers  
+// }
+
+// console.log(arrayFilter([1,2,3,'5','2',6,14,'12']))
+// console.log(arrayFilter([11,22,33,'nope','2',436,214,'filter me']))
+// console.log(arrayFilter([1,22,35,'5','bye',6,144,'okay']))
+
+// same function but with added example of arraow function
 
 function arrayFilter(array){ 
-  var numbers = array.filter(function(item){
-    return typeof item === 'number';
-  });
   
- return numbers  
-}
+  return array.filter(number => typeof number === 'string');
+  
+};
 
 console.log(arrayFilter([1,2,3,'5','2',6,14,'12']))
 console.log(arrayFilter([11,22,33,'nope','2',436,214,'filter me']))

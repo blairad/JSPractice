@@ -275,6 +275,9 @@
 // console.log(nameShuffle("John Smith"));
 // console.log(nameShuffle("Albert Einstein"));
 
+
+
+
 // a wee function to remove strings from an array
 
 // function arrayFilter(array){
@@ -292,6 +295,8 @@
 // console.log(arrayFilter([11,22,33,'nope','2',436,214,'filter me']))
 // console.log(arrayFilter([1,22,35,'5','bye',6,144,'okay']))
 
+
+
 // // same same but different... less code
 
 // function arrayFilter(array){ 
@@ -308,12 +313,43 @@
 
 // same function but with added example of arraow function
 
-function arrayFilter(array){ 
+// function arrayFilter(array){ 
+//   //'string' or 'number' etc for different result
+//   return array.filter(number => typeof number === 'string');
   
-  return array.filter(number => typeof number === 'string');
-  
-};
+// };
 
-console.log(arrayFilter([1,2,3,'5','2',6,14,'12']))
-console.log(arrayFilter([11,22,33,'nope','2',436,214,'filter me']))
-console.log(arrayFilter([1,22,35,'5','bye',6,144,'okay']))
+// console.log(arrayFilter([1,2,3,'5','2',6,14,'12']))
+// console.log(arrayFilter([11,22,33,'nope','2',436,214,'filter me']))
+// console.log(arrayFilter([1,22,35,'5','bye',6,144,'okay']))
+
+
+// find largest number in array methods
+
+
+// function largestNumber(array) {
+  
+//   var maxNumber = 0;
+  
+//   for(var i = 0; i < array.length; i ++){
+//     if(array[i] > maxNumber){
+//       maxNumber = array[i]
+//     }
+//   }
+//   return maxNumber;
+// }
+
+// console.log(largestNumber([4,6,1,2,8,10]))
+// console.log(largestNumber([90,89,73,100,2,3]))
+
+
+// less code
+
+function largestNumber(array) {
+
+  return Math.max(...array)
+  
+}
+
+console.log(largestNumber([4,6,1,2,8,10]))
+console.log(largestNumber([90,89,73,100,2,3]))

@@ -259,23 +259,49 @@
 
 // alphabetical order string but with spread operator
 
-function alphaOrder(string){
+// function alphaOrder(string){
+//   return [...string].sort().join('');
+// }
+
+// console.log(alphaOrder('the beatles'));
+// console.log(alphaOrder('hello, goodbye'));
+
+// // a reverse name 
+
+// function nameShuffle(str) {
+//   return str.split(' ').reverse().join(' ');
+// }
+
+// console.log(nameShuffle("John Smith"));
+// console.log(nameShuffle("Albert Einstein"));
+
+// a wee function to remove strings from an array
+
+function arrayFilter(array){
   
+  var numbers = [];
+  // array. length itterates from start to finish. 0 to ...
+  for(var i = 0; i < array.length; i++){
+    if(typeof array[i] === 'number'){
+      numbers.push(array[i])
+    }
+  }
+ return numbers 
+}
+console.log(arrayFilter([1,2,3,'5','2',6,14,'12']))
+console.log(arrayFilter([11,22,33,'nope','2',436,214,'filter me']))
+console.log(arrayFilter([1,22,35,'5','bye',6,144,'okay']))
+
+// same same but different... less code
+
+function arrayFilter(array){ 
+  var numbers = array.filter(function(item){
+    return typeof item === 'number';
+  });
   
-  
-  return [...string].sort().join('');
-  
-  
+ return numbers  
 }
 
-console.log(alphaOrder('the beatles'));
-console.log(alphaOrder('hello, goodbye'));
-
-// a reverse name 
-
-function nameShuffle(str) {
-  return str.split(' ').reverse().join(' ');
-}
-
-console.log(nameShuffle("John Smith"));
-console.log(nameShuffle("Albert Einstein"));
+console.log(arrayFilter([1,2,3,'5','2',6,14,'12']))
+console.log(arrayFilter([11,22,33,'nope','2',436,214,'filter me']))
+console.log(arrayFilter([1,22,35,'5','bye',6,144,'okay']))

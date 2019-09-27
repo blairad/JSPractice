@@ -275,7 +275,7 @@
 // console.log(nameShuffle("John Smith"));
 // console.log(nameShuffle("Albert Einstein"));
 
-//another little play around. still not quite getting why some things do certain things yet! :/
+//another little play around. still not quite getting why some things do certain things yet! :/. i do like how little changes make bid differences
 
 function reverseString(string){
   return string.split('').reverse().join('');
@@ -284,7 +284,15 @@ function reverseString(string){
 console.log(reverseString('car'));
 console.log(reverseString('bar'));
 
+// another as above with string operator. need to read up on that more
 
+function reverseString(string){
+  return [...string].reverse().join('')
+}
+
+
+console.log(reverseString('car'));
+console.log(reverseString('bar'));
 
 
 // a wee function to remove strings from an array
@@ -364,9 +372,3 @@ console.log(reverseString('bar'));
 // console.log(largestNumber([90,89,73,100,2,3]))
 
 
-function reverseString(string){
-  return string.split('').reverse().join('');
-}
-
-console.log(reverseString('car'));
-console.log(reverseString('bar'));

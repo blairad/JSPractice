@@ -275,6 +275,15 @@
 // console.log(nameShuffle("John Smith"));
 // console.log(nameShuffle("Albert Einstein"));
 
+//another little play around. still not quite getting why some things do certain things yet! :/
+
+function reverseString(string){
+  return string.split('').reverse().join('');
+}
+
+console.log(reverseString('car'));
+console.log(reverseString('bar'));
+
 
 
 
@@ -345,11 +354,19 @@
 
 // less code
 
-function largestNumber(array) {
+// function largestNumber(array) {
 
-  return Math.max(...array)
+//   return Math.max(...array)
   
+// }
+
+// console.log(largestNumber([4,6,1,2,8,10]))
+// console.log(largestNumber([90,89,73,100,2,3]))
+
+
+function reverseString(string){
+  return string.split('').reverse().join('');
 }
 
-console.log(largestNumber([4,6,1,2,8,10]))
-console.log(largestNumber([90,89,73,100,2,3]))
+console.log(reverseString('car'));
+console.log(reverseString('bar'));

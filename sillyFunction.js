@@ -379,11 +379,15 @@
 // check that a string is a palendrome
 
 function palindrome(string) {
+   
+  let regExp = string.replace(/\W/g, '');
+  let lowerCase = regExp.toLowerCase().replace(regExp, '');
+  let reverseString = lowerCase.split('').reverse().join('');
   
-  let palindromeString = string.replace()
-  
+    return lowerCase === reverseString
+      
 }
 
 console.log(palindrome('Is This a Palendrome'));
-console.log(palindrome('Was It a Rat I Saw?'));
+console.log(palindrome('Was It A Rat I Saw?'));
 console.log(palindrome('Eva, Can I stab bats In a Cave?'))

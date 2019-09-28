@@ -277,22 +277,25 @@
 
 //another little play around. still not quite getting why some things do certain things yet! :/. i do like how little changes make bid differences
 
-function reverseString(string){
-  return string.split('').reverse().join('');
-}
+// function reverseString(string){
+//   return string.split('').reverse().join('');
+// }
 
-console.log(reverseString('car'));
-console.log(reverseString('bar'));
+// console.log(reverseString('car'));
+// console.log(reverseString('bar'));
 
-// another as above with string operator. need to read up on that more
+// // another as above with string operator. need to read up on that more
+// //the [...string] splits up the string into an array of individual characters so no split is needed
 
-function reverseString(string){
-  return [...string].reverse().join('')
-}
+// function reverseString(string){
+//   return [...string].reverse().join('')
+// }
 
 
-console.log(reverseString('car'));
-console.log(reverseString('bar'));
+// console.log(reverseString('car'));
+// console.log(reverseString('bar'));
+
+
 
 
 // a wee function to remove strings from an array
@@ -372,3 +375,15 @@ console.log(reverseString('bar'));
 // console.log(largestNumber([90,89,73,100,2,3]))
 
 
+
+// check that a string is a palendrome
+
+function palindrome(string) {
+  
+  let palindromeString = string.replace()
+  
+}
+
+console.log(palindrome('Is This a Palendrome'));
+console.log(palindrome('Was It a Rat I Saw?'));
+console.log(palindrome('Eva, Can I stab bats In a Cave?'))

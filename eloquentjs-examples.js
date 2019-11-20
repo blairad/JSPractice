@@ -20,7 +20,6 @@ var power = function(base, exponent) {
         result += "'";
       result += "\\";
     }
-    
     flat(3);
     mountain(4);
     flat(3);

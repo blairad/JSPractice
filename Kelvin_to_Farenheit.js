@@ -1,4 +1,4 @@
-var kelvinTemp = 301;
+var kelvinTemp = 275;
 
 // celsius is 273.15 degrees lower than kelvin so taking it away from the kelvinTemp variable
 var celsius = kelvinTemp - 273.15;

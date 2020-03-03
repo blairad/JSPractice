@@ -47,23 +47,52 @@ function helloWorld(num) {
     for (let i = 0; i <= num; i++)
         if (num % 3 === 0) {
             console.log("hello")
-        }else if(num % 5 === 0){
-            console.log("world")
-        }else if(num % 3 && num % 5 === 0){
-            console.log('hello world')
-        }
+        } else if (num % 5 === 0) {
+        console.log("world")
+    } else if (num % 3 && num % 5 === 0) {
+        console.log('hello world')
+    }
 }
 console.log(helloWorld(30))
 
 function hello(num) {
     for (let i = 1; i <= num; i++) {
-      if (i % 3 === 0 && i % 5 === 0) {
-        console.log("hello world", i);
-      } else if (i % 3 === 0) {
-        console.log("Hello", i); ;
-      } else if (i % 5 === 0) {
-        console.log("World", i)
-      }
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("hello world", i);
+        } else if (i % 3 === 0) {
+            console.log("Hello", i);;
+        } else if (i % 5 === 0) {
+            console.log("World", i)
+        }
     }
-  }
-hello(30)  
+}
+hello(3)
+
+function min(x, y) {
+    return Math.min(x, y)
+}
+console.log(min(10, 9))
+
+//recursion 
+function isEven(num) {
+        if (num == 0) return true;
+        else if (num == 1) return false
+        else if (num < 0) return isEven(-num)
+        else return isEven(num- 2)
+}
+console.log(isEven(75))
+console.log(isEven(50))
+console.log(isEven(-1))
+
+myNums = [1,2,3,4,5,6,7,8,9,10]
+
+function sum(n){
+    if(n < 1){
+        return []
+    } else {
+        const sumCount = sum(n -1)
+        sumCount.push(n)
+        return sumCount;
+    }
+}
+console.log(sum(100))
